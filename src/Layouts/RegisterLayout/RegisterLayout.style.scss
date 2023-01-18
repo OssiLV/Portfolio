@@ -1,0 +1,87 @@
+.RegisterLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        -140deg,
+        rgba(16, 7, 32, 1),
+        rgba(16, 7, 32, 1),
+        rgba(16, 7, 32, 1),
+        rgb(67, 21, 147),
+        rgb(51, 21, 101),
+        rgb(37, 18, 69),
+        rgba(28, 152, 146, 0.8)
+    );
+    width: 100%;
+    height: 100vh;
+    color: white;
+    .RegisterBoard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        height: 80vh;
+        .pic_register {
+            border-radius: 60px;
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+            .pictureRegister {
+                filter: contrast(120%);
+                opacity: 0.8;
+                border-radius: 60px;
+                width: 100%;
+                height: 85vh;
+                background: linear-gradient(-58deg, rgb(37, 18, 69), rgb(67, 21, 147));
+            }
+        }
+
+        .input_register {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .title {
+                font-weight: bold;
+                margin-bottom: 22px;
+                font-size: 22px;
+            }
+            .icon {
+                text-align: center;
+                min-width: 60px;
+                padding: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-right: none;
+                border-radius: 8px 0 0 8px;
+                cursor: pointer;
+            }
+            .group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn_create-account {
+                margin: 16px 0;
+            }
+            .password {
+                input {
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    border-right: none;
+                    border-left: none;
+                    border-radius: 0;
+                }
+                .icon-showPassword {
+                    text-align: center;
+                    min-width: 60px;
+                    padding: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    border-left: none;
+                    border-radius: 0 8px 8px 0;
+                    cursor: pointer;
+                }
+            }
+            .has_account {
+                text-align: center;
+            }
+        }
+    }
+}

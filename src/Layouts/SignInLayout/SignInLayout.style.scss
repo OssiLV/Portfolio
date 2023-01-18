@@ -1,0 +1,80 @@
+.SignInLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        -135deg,
+        rgba(16, 7, 32, 1),
+        rgba(16, 7, 32, 1),
+        rgba(16, 7, 32, 1),
+        rgba(16, 7, 32, 1),
+        rgb(51, 21, 101),
+        rgb(37, 18, 69),
+        rgba(28, 152, 146, 0.8)
+    );
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+    .SignInBoard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(24, 11, 46, 0.8);
+        width: 420px;
+        height: 420px;
+        border-radius: 18px;
+        .input_signin {
+            width: 340px;
+            height: 340px;
+            .title {
+                font-weight: bold;
+                margin-bottom: 22px;
+                font-size: 22px;
+            }
+            .icon {
+                text-align: center;
+                min-width: 60px;
+                padding: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-right: none;
+                border-radius: 8px 0 0 8px;
+                cursor: pointer;
+            }
+            .group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn_sign-in {
+                margin: 16px 0;
+            }
+            .password {
+                input {
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    border-right: none;
+                    border-left: none;
+                    border-radius: 0;
+                }
+                .icon-showPassword {
+                    text-align: center;
+                    min-width: 60px;
+                    padding: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    border-left: none;
+                    border-radius: 0 8px 8px 0;
+                    cursor: pointer;
+                }
+            }
+            .forgot_password {
+                margin-left: 32%;
+            }
+            .no-account {
+                margin-bottom: 12px;
+                .register {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
